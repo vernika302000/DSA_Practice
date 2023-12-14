@@ -1,0 +1,16 @@
+
+
+/* Concepts of a graph - https://www.youtube.com/watch?v=M3_pLsDdeuU&list=PLgUwDviBIf0rGEWe64KWas0Nryn7SCRWw */
+
+1) Types of Graph - A) Directed Graph - direction is specified.
+                    B) UnDirected Graph - direction is not specified.
+2) Two components of graphs are - Node and Edges.
+3) Cycles in graphs - if starting from a node you can reach that node again, then a graph contains cycle.
+4) Path - It contains a lot of nodes with each node is reachable.
+5) Degree of a node - It is the number of attached edges to that node.
+6) Total Degree of a graph - 2 * (Total number of edges in a graph).
+7) In-degree of a node - The number of incoming edges in a node.
+8) Out-degree of a node - The number of outgoing edges of a node.
+9) Edge Weight - Sometimes edges are also given a weight.
+
+

@@ -1,0 +1,10 @@
+
+
+Traversals in a binary tree are of two types :
+
+a) Depth first Search Traversal - Inorder    ( Left - Root - Right)
+                                  PreOrder   ( Root - Left - Right)
+                                  PostOrder  ( Left - Right - Root)
+
+
+b) Breadth First Search Traversal - Level Order Traversal
