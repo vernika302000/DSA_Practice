@@ -23,8 +23,8 @@ public class Q_2_Representation_of_graphs_adjacency_list
     public static void main(String[] args)
     {
         Scanner scn=new Scanner(System.in);
-        int n=scn.nextInt();
-        int m=scn.nextInt();
+        int n=scn.nextInt(); //number of nodes
+        int m=scn.nextInt(); //number of edges
         List<List<Integer>> adj=new LinkedList<>();
         buildGraphAdjacencyList(adj,n,m);
         for(int i=1;i<n;i++)
