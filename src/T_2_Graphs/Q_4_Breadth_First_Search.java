@@ -12,8 +12,7 @@ public class Q_4_Breadth_First_Search
         List<List<Integer>> adj=new LinkedList<>();
 
         Q_2_Representation_of_graphs_adjacency_list.buildGraphAdjacencyList(adj,n,m);
-        int V=scn.nextInt();
-        boolean[] vis=new boolean[V+1];
+        boolean[] vis=new boolean[n+1];
         List<Integer> bfs=new ArrayList<>();
         vis[1]=true;
         Queue<Integer> q=new LinkedList<>();
