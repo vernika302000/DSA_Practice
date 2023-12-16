@@ -9,7 +9,7 @@ public class Q_7_Detect_cycle_Using_DFS
         vis[node]=true;
         for(int it:adj.get(node))
         {
-            if(vis[it]==false)
+            if(!vis[it])
             {
                 if(dfs(adj,vis,it,node)) return true;
                 else if(it!=parent) return true;
