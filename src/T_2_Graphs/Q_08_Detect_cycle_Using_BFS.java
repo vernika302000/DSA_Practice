@@ -1,7 +1,7 @@
 package T_2_Graphs;
 import java.util.*;
 
-public class Q_8_Detect_cycle_Using_BFS
+public class Q_08_Detect_cycle_Using_BFS
 {
     public static class pair
     {
@@ -42,7 +42,7 @@ public class Q_8_Detect_cycle_Using_BFS
         int n=scn.nextInt();
         int m=scn.nextInt();
         List<List<Integer>> adj=new ArrayList<>();
-        Q_2_Representation_of_graphs_adjacency_list.buildGraphAdjacencyList(adj,n,m);
+        Q_02_Representation_of_graphs_adjacency_list.buildGraphAdjacencyList(adj,n,m);
         boolean[] vis=new boolean[n+1];
         Arrays.fill(vis,false);
         for(int i=0;i<n;i++)

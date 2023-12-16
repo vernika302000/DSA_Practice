@@ -2,7 +2,7 @@ package T_2_Graphs;
 
 import java.util.*;
 
-public class Q_6_Rotten_Oranges
+public class Q_06_Rotten_Oranges
 {
     /*
        Given a grid of dimension nxm where each cell in the grid can have values 0, 1 or 2 which has the following meaning:

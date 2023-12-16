@@ -2,7 +2,7 @@ package T_2_Graphs;
 
 import java.util.*;
 
-public class Q_9_Distance_of_nearest_cell_having_1
+public class Q_09_Distance_of_nearest_cell_having_1
 {   // 3 3 -> 1 0 1 1 1 0 1 0 0
     public static class Pair
     {

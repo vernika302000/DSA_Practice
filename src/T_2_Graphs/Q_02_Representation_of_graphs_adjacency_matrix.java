@@ -1,7 +1,7 @@
 package T_2_Graphs;
 import java.util.*;
 
-public class Q_2_Representation_of_graphs_adjacency_matrix
+public class Q_02_Representation_of_graphs_adjacency_matrix
 {
     /* n=5 m=6 (1,2),(1,3),(3,4),(2,4),(2,5),(4,5) */
     public static void buildGraphAdjacencyMatrix(int[][] adj,int n,int m)

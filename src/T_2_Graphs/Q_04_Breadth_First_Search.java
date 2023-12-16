@@ -1,7 +1,7 @@
 package T_2_Graphs;
 import java.util.*;
 
-public class Q_4_Breadth_First_Search
+public class Q_04_Breadth_First_Search
 {
     // For BFS - using Queue data structure
     public static void main(String[] args)
@@ -11,7 +11,7 @@ public class Q_4_Breadth_First_Search
         int m=scn.nextInt();
         List<List<Integer>> adj=new LinkedList<>();
 
-        Q_2_Representation_of_graphs_adjacency_list.buildGraphAdjacencyList(adj,n,m);
+        Q_02_Representation_of_graphs_adjacency_list.buildGraphAdjacencyList(adj,n,m);
         boolean[] vis=new boolean[n+1];
         List<Integer> bfs=new ArrayList<>();
         vis[1]=true;
