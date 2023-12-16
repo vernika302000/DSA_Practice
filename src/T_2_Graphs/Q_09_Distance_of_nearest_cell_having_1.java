@@ -75,9 +75,5 @@ public class Q_09_Distance_of_nearest_cell_having_1
             }
             System.out.println();
         }
-
-
-
-
     }
 }

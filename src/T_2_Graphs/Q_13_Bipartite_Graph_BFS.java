@@ -1,7 +1,7 @@
 package T_2_Graphs;
 import java.util.*;
 
-public class Q_13_Bipartite_Graph
+public class Q_13_Bipartite_Graph_BFS
 {
     // Color the graph with two colours such that no two adjacent nodes have same colour.
     // Linear graphs with no cycles in it -> always bipartite
