@@ -54,8 +54,8 @@ public class Q_06_Rotten_Oranges
         }
 
         int tm=0;
-        int dRow[]={-1,0,1,0};
-        int dCol[]={0,1,0,-1};
+        int[] dRow ={-1,0,1,0};
+        int[] dCol ={0,1,0,-1};
         int cnt=0;
         while(!q.isEmpty())
         {
