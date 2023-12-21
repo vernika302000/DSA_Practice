@@ -4,6 +4,10 @@ import java.util.*;
 public class Q_11_Number_Of_Enclaves
 {
     // Algorithm -> The remaining 1's not connected to the boundary ones is the answer.
+    /*You are given an n x m binary matrix grid, where 0 represents a sea cell and 1 represents a land cell.
+    A move consists of walking from one land cell to another adjacent (4-directionally) land cell
+    or walking off the boundary of the grid. Find the number of land cells in grid for
+    which we cannot walk off the boundary of the grid in any number of moves.*/
     public static class Pair
     {
         int first;

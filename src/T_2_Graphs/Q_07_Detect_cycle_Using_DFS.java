@@ -3,7 +3,7 @@ import java.util.*;
 
 public class Q_07_Detect_cycle_Using_DFS
 {
-    //    7 7 -> 1 2 2 5 5 7 7 6 6 3 3 1 3 4
+    //    7 7 -> 1 2 2 5 5 7 7 6 6 3 3 1 3 4 -> cycle exists in the graph
     public static boolean dfs(List<List<Integer>> adj,boolean[] vis,int node,int parent)
     {
         vis[node]=true;
