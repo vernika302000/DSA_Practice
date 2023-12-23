@@ -15,7 +15,7 @@ import java.util.*;
 */
 public class Q_15_Find_Eventual_Safe_State
 {
-    //    11 13 -> 0 1  1 2  2 3  3 5  3 4  4 6  5 6  6 7  7 8  8 9  9 10  10 8  8 1  11 9
+    //    12 14 -> 0 1  1 2  2 3  3 5  3 4  4 6  5 6  6 7  7 8  8 9  9 10  10 8  8 1  11 9
 
     public static boolean dfs(List<List<Integer>> adj,int[] vis,int[] pathVis,int[] check,int node)
     {
@@ -33,7 +33,6 @@ public class Q_15_Find_Eventual_Safe_State
         check[node]=1;
         pathVis[node]=0;
         return false;
-
     }
     public static void main(String[] args)
     {
@@ -42,10 +41,10 @@ public class Q_15_Find_Eventual_Safe_State
         int m=scn.nextInt();
         List<List<Integer>> adj=new LinkedList<>();
         Q_16_Topological_Sorting.buildDirectedGraph(adj,n,m);
-        int[] vis=new int[n];
-        int[] pathVis=new int[n];
-        int[] check=new int[n];
-        for(int i=0;i<n;i++)
+        int[] vis=new int[n+1];
+        int[] pathVis=new int[n+1];
+        int[] check=new int[n+1];
+        for(int i=0;i<=n;i++)
         {
             if(vis[i]==0)
             {
@@ -54,7 +53,7 @@ public class Q_15_Find_Eventual_Safe_State
         }
         int cnt=0;
         List<Integer> safe=new LinkedList<>();
-        for(int i=0;i<n;i++)
+        for(int i=0;i<=n;i++)
         {
             if (check[i] == 1) safe.add(i);
         }
