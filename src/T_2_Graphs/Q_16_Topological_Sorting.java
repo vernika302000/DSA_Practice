@@ -4,6 +4,7 @@ import java.util.*;
 
 public class Q_16_Topological_Sorting
 {
+    // DFS technique of Topological Sorting
     static Scanner scn=new Scanner(System.in);
     /*
     * linear ordering of the edges such that if there is an edge between u and v, u comes before v in ordering
