@@ -3,3 +3,5 @@
 ## Graphs
 - Representation in Adjcency List and Matrix
 - Traversals - BFS and DFS
+- Dijikstra's Algorithm
+- Bellman Ford Algorithm
