@@ -1,0 +1,5 @@
+
+=> A spanning tree is a tree having n nodes and (n-1) edges and all nodes are reachable from each
+   other is k/a minimum spanning tree.
+=> A minimum spanning tree is the one which have lease sum of the edges weight
+=> There can be a number of spanning trees of a graph, and the lease sum is considered as MST.
