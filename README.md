@@ -6,3 +6,4 @@
 - Dijikstra's Algorithm
 - Bellman Ford Algorithm
 - Floyd Warshall's Algorithm
+- Prims Algorithm
