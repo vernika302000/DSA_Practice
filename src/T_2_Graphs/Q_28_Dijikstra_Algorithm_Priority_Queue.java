@@ -3,15 +3,7 @@ import java.util.*;
 
 public class Q_28_Dijikstra_Algorithm_Priority_Queue
 {
-    /*  2
-1
-1
-9
-1
-0
-9
-0
-*/
+    /* Time complexity - O(ElogV) */
     public static class Pair1
     {
         int dist;
@@ -43,7 +35,6 @@ public class Q_28_Dijikstra_Algorithm_Priority_Queue
         }
         for(int i=0;i<n;i++)
         {
-
             int t=scn.nextInt();
             for(int j=0;j<t;j++)
             {

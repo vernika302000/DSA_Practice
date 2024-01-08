@@ -7,7 +7,7 @@ public class Q_35_Bellman_Ford_Algorithm
 {
     /* Used to find the shortest path to each node ->
     -> unlike dijikstra's algorithm it doesn't fail with negative edges also.
-    -> only applicable on negative edges.
+    -> only applicable on directed graphs
     -> if any undirected graph is given, convert it into directed graph, then only bellman ford can be applied.
     -> Relax all the edges (n-1) times sequentially.
     E = [[0,1,5],[1,0,3],[1,2,-1],[2,0,1]]

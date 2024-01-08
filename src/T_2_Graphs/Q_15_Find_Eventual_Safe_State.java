@@ -16,7 +16,6 @@ import java.util.*;
 public class Q_15_Find_Eventual_Safe_State
 {
     //    12 14 -> 0 1  1 2  2 3  3 5  3 4  4 6  5 6  6 7  7 8  8 9  9 10  10 8  8 1  11 9
-
     public static boolean dfs(List<List<Integer>> adj,int[] vis,int[] pathVis,int[] check,int node)
     {
         vis[node]=1;
@@ -51,7 +50,6 @@ public class Q_15_Find_Eventual_Safe_State
                dfs(adj,vis,pathVis,check,i);
             }
         }
-        int cnt=0;
         List<Integer> safe=new LinkedList<>();
         for(int i=0;i<=n;i++)
         {

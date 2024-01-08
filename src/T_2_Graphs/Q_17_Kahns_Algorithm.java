@@ -21,7 +21,6 @@ public class Q_17_Kahns_Algorithm
         {
             if(indegree[i]==0) q.add(i);
         }
-        int i=0;
         while(!q.isEmpty())
         {
             int node=q.peek();
