@@ -6,56 +6,56 @@ public class Q_39_Prims_Algorithm
     /* Prims Algorithm - used to find the minimum spanning tree
     *  A visited array and a priority queue is needed to solve the problem using prims.
     *  */
-    public static class Pair
+    public static class DisjointSet
     {
-        int wt;
-        int node;
-        public Pair(int a,int b)
+        List<Integer> rank=new ArrayList<>();
+        List<Integer> parent=new ArrayList<>();
+        public DisjointSet(int n)
         {
-            this.wt=a;
-            this.node=b;
+            for (int i = 0; i <= n; i++)
+            {
+                rank.add(0);
+                parent.add(i);
+            }
+        }
+        public int findUPar(int node)
+        {
+            if(node == parent.get(node)) return node;
+            int ulp=findUPar(parent.get(node));
+            parent.set(node,ulp);
+            return parent.get(node);
+        }
+        public void UnionByRank(int u,int v)
+        {
+            int ulp_u=findUPar(u);
+            int ulp_v=findUPar(v);
+            if(ulp_u == ulp_v) return;
+            if(rank.get(ulp_u) < rank.get(ulp_v)) rank.set(ulp_u,ulp_v);
+            else if(rank.get(ulp_v) < rank.get(ulp_u)) rank.set(ulp_v,ulp_u);
+            else
+            {
+                parent.set(ulp_v,ulp_u);
+                int rankU=rank.get(ulp_u);
+                rank.set(ulp_u,rankU+1);
+            }
         }
     }
     public static void main(String[] args)
     {
-        Scanner scn=new Scanner(System.in);
-        int n=scn.nextInt();
-        int m=scn.nextInt();
-        int[][] mat=new int[n][3];
-        for(int i=0;i<m;i++)
-        {
-            for(int j=0;j<3;j++) mat[i][j]= scn.nextInt();
-        }
-        ArrayList<ArrayList<Pair>> adj=new ArrayList<>();
-        for(int i=0;i<n;i++) adj.add(new ArrayList<>());
-        for(int i=0;i<m;i++)
-        {
-            int u=mat[i][0];
-            int v=mat[i][1];
-            int wt=mat[i][2];
-            adj.get(u).add(new Pair(v,wt));
-            adj.get(v).add(new Pair(u,wt));
-        }
-        int[] vis=new int[n];
-        Arrays.fill(vis,0);
-        PriorityQueue<Pair> pq=new PriorityQueue<>((x,y)-> x.wt-y.wt);
-        pq.add(new Pair(0,0));
-        int sum=0;
-        while(!pq.isEmpty())
-        {
-            int w=pq.peek().wt;
-            int node=pq.peek().node;
-            pq.remove();
-            if(vis[node]==1) continue;
-            vis[node]=1;
-            sum+=w;
-            for(Pair it:adj.get(node))
-            {
-                int eW=it.wt;
-                int aN=it.node;
-                if(vis[aN]==0) pq.add(new Pair(eW,aN));
-            }
-        }
-        System.out.println(sum);
+        DisjointSet ds=new DisjointSet(7);
+        ds.UnionByRank(1,2);
+        ds.UnionByRank(2,3);
+        ds.UnionByRank(4,5);
+        ds.UnionByRank(6,7);
+        ds.UnionByRank(5,6);
+
+        // does 3 & 7 are same or not
+        if(ds.findUPar(3) == ds.findUPar(7)) System.out.println("same");
+        else System.out.println("not same");
+
+        ds.UnionByRank(3,7);
+
+        if(ds.findUPar(3) == ds.findUPar(7)) System.out.println("same");
+        else System.out.println("not same");
     }
 }
